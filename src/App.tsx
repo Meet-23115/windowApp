@@ -1,13 +1,24 @@
 
 import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
 import "../global.css";
+import { NativeRouter, Route, Routes } from 'react-router-native';
+
+//screens
+import Home from './screens/Home';
+import Login from './screens/Login';
+
+
 export default function App() {
   return (
-    <SafeAreaView style={styles.background}>
-      <View className=' h-full w-10  bg-slate-600'>
-        <Text>Hello</Text>
-      </View>
-    </SafeAreaView>
+    <NativeRouter>
+    <View style={{ padding: 20 }}>
+      <Routes>
+      <Route  path="/" Component={Home} />
+      <Route path="/Login" Component={Login} />
+      </Routes>
+     
+    </View>
+  </NativeRouter>
   );
 }
 

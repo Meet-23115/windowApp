@@ -17,6 +17,7 @@
     "react-native-reanimated": "^3.16.6",
     "react-native-safe-area-context": "^5.0.0",
     "react-native-windows": "^0.76.3",
+    "react-router-native": "^6.28.1",
     "tailwindcss": "^3.4.17"
   },
   "devDependencies": {
