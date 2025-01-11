@@ -11,7 +11,7 @@ import Login from './screens/Login';
 export default function App() {
   return (
     <NativeRouter>
-    <View style={{ padding: 20 }}>
+    <View >
       <Routes>
       <Route  path="/" Component={Home} />
       <Route path="/Login" Component={Login} />
@@ -22,8 +22,3 @@ export default function App() {
   );
 }
 
-const styles = StyleSheet.create({
-  background: {
-    backgroundColor : "white"
-  }
-});
